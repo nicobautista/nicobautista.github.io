@@ -5,18 +5,19 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Fade } from "react-reveal";
 import { projectsHeader, projects } from "../../portfolio.js";
 import "./Projects.css";
+import { Masonry } from "@mui/lab";
 import ProjectsImg from "./ProjectsImg";
-import { style } from "glamor";
+// import { style } from "glamor";
 
 function Projects(props) {
   const theme = props.theme;
-
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
+  const column_count = 3;
+  //   const styles = style({
+  //     backgroundColor: `${theme.accentBright}`,
+  //     ":hover": {
+  //       boxShadow: `0 5px 15px ${theme.accentBright}`,
+  //     },
+  //   });
 
   return (
     <div className="projects-main">
@@ -44,21 +45,26 @@ function Projects(props) {
           </div>
         </Fade>
       </div>
-      <div className="repo-cards-div-main">
-        {projects.data.map((repo) => {
-          return <ProjectCard repo={repo} theme={theme} />;
-        })}
+
+      <div className="masonry-container">
+        <Masonry columns={2} spacing={2} className="repo-cards-div-main">
+          {projects.data.map((repo, i) => {
+            var order = (i + 1) % column_count || column_count;
+            return (
+              <ProjectCard
+                repo={repo}
+                theme={theme}
+                order={order}
+                key={i}
+                className="masonry-project-card"
+              />
+            );
+          })}
+        </Masonry>
       </div>
       <br />
       <br />
       <br />
-      <a
-        {...styles}
-        className="general-btn"
-        href="https://github.com/harikanani"
-      >
-        More Projects (Github)
-      </a>
       <br />
       <br />
       <Footer theme={props.theme} onToggle={props.onToggle} />

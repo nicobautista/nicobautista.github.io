@@ -8,16 +8,22 @@ function ExperienceCard(props) {
     <div
       className="experience-card"
       style={{
-        border: `1px solid ${experience["color"]}`,
+        border: `2px solid ${experience["color"]}`,
         backgroundColor: theme.imageDark,
       }}
     >
       <div className="experience-card-logo-div">
-        <img
-          className="experience-card-logo"
-          src={require(`../../assests/images/${experience["logo_path"]}`)}
-          alt=""
-        />
+        <a
+          href={experience["company_url"]}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="experience-card-logo"
+            src={require(`../../assests/images/${experience["logo_path"]}`)}
+            alt=""
+          />
+        </a>
       </div>
       <div className="experience-card-body-div">
         <div className="experience-card-header-div">
@@ -53,15 +59,40 @@ function ExperienceCard(props) {
             </p>
           </div>
         </div>
-        <p
+        <div
           className="experience-card-description"
           style={{ color: theme.text }}
         >
-          {experience["description"]}
-        </p>
+          {descriptionList(experience)}
+        </div>
       </div>
     </div>
   );
+}
+
+function descriptionList(experience_object) {
+  if (experience_object["description_items"] === undefined) return;
+  var description_entries = [];
+  for (var i = 0; i < experience_object["description_items"].length; i++) {
+    description_entries.push(
+      <li key={i}>{experience_object["description_items"][i]}</li>
+    );
+  }
+  if (experience_object["paper"] !== undefined) {
+    description_entries.push(
+      <li key={i + 1}>
+        Published Paper:{" "}
+        <a
+          href={experience_object["paper_url"]}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {experience_object["paper"]}
+        </a>
+      </li>
+    );
+  }
+  return <ol style={{ listStyle: "disc" }}>{description_entries}</ol>;
 }
 
 export default ExperienceCard;

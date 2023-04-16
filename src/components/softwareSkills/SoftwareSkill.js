@@ -19,12 +19,7 @@ function SoftwareSkill(props) {
                 }
               >
                 <li className="software-skill-inline" name={logo.skillName}>
-                  <span
-                    className="iconify"
-                    data-icon={logo.fontAwesomeClassname}
-                    style={logo.style}
-                    data-inline="false"
-                  ></span>
+                  {getSoftwareSkillLogo(logo)}
                 </li>
               </OverlayTrigger>
             );
@@ -33,6 +28,29 @@ function SoftwareSkill(props) {
       </div>
     </div>
   );
+}
+
+function getSoftwareSkillLogo(logo_data) {
+  var logoElement;
+  if (logo_data.image_path) {
+    logoElement = (
+      <img
+        className="software_skill_image"
+        src={require(`../../assests/images/${logo_data["image_path"]}`)}
+        alt=""
+      />
+    );
+  } else {
+    logoElement = (
+      <span
+        className="iconify"
+        data-icon={logo_data.fontAwesomeClassname}
+        style={logo_data.style}
+        data-inline="false"
+      ></span>
+    );
+  }
+  return logoElement;
 }
 
 export default SoftwareSkill;

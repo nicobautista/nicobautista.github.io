@@ -157,13 +157,13 @@
   color: #ffffff !important;
 }
 
-.projects {
+.portfolio2 {
   margin: 2px 5px 20px;
   transition: all 0.2s ease-in-out;
   color: #ffffff;
 }
 
-.projects:hover {
+.portfolio2:hover {
   box-shadow: 0 2px 10px #e44160;
   background-color: #e44160;
   color: #ffffff !important;

@@ -3,13 +3,13 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import { useHistory } from "react-router-dom";
-import FeelingProud from "./FeelingProud";
+// import { useHistory } from "react-router-dom";
+import GreetingGraphic from "./GreetingGraphic";
 import { style } from "glamor";
 
 export default function Greeting(props) {
   const theme = props.theme;
-  const history = useHistory();
+  //   const history = useHistory();
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,
@@ -29,6 +29,7 @@ export default function Greeting(props) {
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
               >
+                <br></br>
                 <span>I'm </span>
                 <span style={{ color: theme.accentColor }}>
                   {greeting.full_name}.{" "}
@@ -37,20 +38,18 @@ export default function Greeting(props) {
               </p>
               <SocialMedia />
               <div className="portfolio-repo-btn-div">
-                <button
+                <a
                   {...styles}
-                  className="button"
-                  onClick={() => {
-                    history.push("/contact");
-                  }}
+                  className="button contact-button"
+                  href={greeting.mail}
                 >
                   Contact Me
-                </button>
+                </a>
               </div>
             </div>
           </div>
           <div className="greeting-image-div">
-            <FeelingProud theme={theme} />
+            <GreetingGraphic theme={theme} />
           </div>
         </div>
       </div>

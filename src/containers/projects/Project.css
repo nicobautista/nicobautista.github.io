@@ -4,16 +4,28 @@
   line-height: normal;
 }
 
-.startup-project-text img{
+.startup-project-text img {
   max-width: 100%;
   height: auto;
 }
 
-.repo-cards-div-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem 1rem;
+/* .project-card-container {
+	padding: 20px;
+	flex: 1 0 auto;
+	overflow: hidden;
 }
+
+.project-card-container-inner{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+	min-height: 100px;
+	border: 1px solid black;
+} */
 
 /* Media Query */
 @media (max-width: 1380px) {
@@ -25,8 +37,5 @@
   .project-title {
     font-size: 30px;
     text-align: center;
-  }
-  .repo-cards-div-main{
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }

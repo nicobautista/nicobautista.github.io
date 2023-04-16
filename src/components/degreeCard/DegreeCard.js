@@ -8,9 +8,9 @@ function DegreeCard(props) {
   const theme = props.theme;
 
   const style_img = style({
-    width: "220px",
+    width: "100px",
     height: "auto",
-    borderRadius: " 50%",
+    borderRadius: "50%",
     padding: "10px",
     border: `1px solid ${theme.accentColor}`,
     marginRight: "50px",
@@ -21,8 +21,8 @@ function DegreeCard(props) {
       boxShadow: `0 5px 15px ${theme.accentColor}`,
     },
     "@media (max-width: 768px)": {
-      marginLeft: "50px",
-      marginBottom: "15px",
+      marginLeft: "5px",
+      marginBottom: "5px",
       width: "175px",
     },
   });
@@ -45,27 +45,27 @@ function DegreeCard(props) {
     },
   });
 
-  const button_visit = style({
-    textDecoration: "none",
-    color: "rgba(255, 255, 255, 1)",
-    background: `${theme.accentColor}`,
-    padding: "15px 15px",
-    marginTop: "25px",
-    borderRadius: "4px",
-    borderWidth: "0px",
-    marginBottom: "20px",
-    width: "200px",
-    height: "50px",
-    fontWeight: "bold",
-    fontFamily: "Google Sans Regular",
-    fontSize: "17px",
-    transition: "all 0.2s ease-in-out",
-    cursor: "pointer",
-    ":hover": {
-      color: "rgba(255, 255, 255, 1)",
-      boxShadow: `0 5px 10px ${theme.accentColor}`,
-    },
-  });
+  //   const button_visit = style({
+  //     textDecoration: "none",
+  //     color: "rgba(255, 255, 255, 1)",
+  //     background: `${theme.accentColor}`,
+  //     padding: "15px 15px",
+  //     marginTop: "25px",
+  //     borderRadius: "4px",
+  //     borderWidth: "0px",
+  //     marginBottom: "20px",
+  //     width: "200px",
+  //     height: "50px",
+  //     fontWeight: "bold",
+  //     fontFamily: "Google Sans Regular",
+  //     fontSize: "17px",
+  //     transition: "all 0.2s ease-in-out",
+  //     cursor: "pointer",
+  //     ":hover": {
+  //       color: "rgba(255, 255, 255, 1)",
+  //       boxShadow: `0 5px 10px ${theme.accentColor}`,
+  //     },
+  //   });
 
   return (
     <div className="degree-card">
@@ -75,7 +75,7 @@ function DegreeCard(props) {
             style={{
               maxWidth: "100%",
               maxHeight: "100%",
-              transform: "scale(-50%, -50%)",
+              transform: "scale(80%, 80%)",
             }}
             src={require(`../../assests/images/${degree.logo_path}`)}
             alt={degree.alt_name}
@@ -86,7 +86,7 @@ function DegreeCard(props) {
         <div {...card_body}>
           <div
             className="body-header"
-            style={{ backgroundColor: theme.accentColor }}
+            style={{ backgroundColor: theme.secondaryText }}
           >
             <div className="body-header-title">
               <h2 className="card-title" style={{ color: "#FFFFFF" }}>
@@ -102,7 +102,7 @@ function DegreeCard(props) {
               </h3>
             </div>
           </div>
-          <div classname="body-content">
+          <div className="body-content">
             {degree.descriptions.map((sentence) => {
               return (
                 <p className="content-list" style={{ color: theme.text }}>
@@ -110,7 +110,7 @@ function DegreeCard(props) {
                 </p>
               );
             })}
-            <a
+            {/* <a
               href={degree.website_link}
               target="_blank"
               rel="noopener noreferrer"
@@ -127,7 +127,7 @@ function DegreeCard(props) {
               >
                 Visit Website
               </p>
-            </a>
+            </a> */}
           </div>
         </div>
       </Fade>

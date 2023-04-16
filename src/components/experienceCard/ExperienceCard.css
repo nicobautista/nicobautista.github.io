@@ -69,10 +69,15 @@
 
 .experience-card-description {
   margin-top: 5px;
+  margin-bottom: 10px;
   margin-left: 10px;
   text-align: justify;
   margin-right: 20px;
   font-family: "Google Sans Regular";
+}
+
+.experience-card-description a:link {
+  color: aquamarine;
 }
 
 .experience-card-company > a {
