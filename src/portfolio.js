@@ -15,7 +15,7 @@ const greeting = {
   nickname: "",
   full_name: "Nicolas Bautista",
   subTitle:
-    "A Mechanical Engineer with relevant experience in CAD design, prototyping, additive manufacturing, and mechatronics.",
+    "a Mechanical Engineer with relevant experience in CAD design, prototyping, additive manufacturing, and mechatronics.",
   resumeLink:
     "https://drive.google.com/file/d/1HuhpqKBmRx_xtf2UdPA7B9Jv27LeKnwT/view?usp=sharing",
   mail: "mailto:nicolas_bh@outlook.com",
