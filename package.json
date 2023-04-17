@@ -2,7 +2,7 @@
   "private": true,
   "name": "personal_portfolio",
   "version": "1.0.0",
-  "homepage": "https://nicobautista.github.io",
+  "homepage": "https://nicobautista.github.io/PortfolioV2",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
