@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.70dac7bd.chunk.css",
-    "main.js": "/static/js/main.0ce16b57.chunk.js",
-    "main.js.map": "/static/js/main.0ce16b57.chunk.js.map",
+    "main.css": "/static/css/main.c3712852.chunk.css",
+    "main.js": "/static/js/main.0f57173c.chunk.js",
+    "main.js.map": "/static/js/main.0f57173c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.96201c16.js",
     "runtime-main.js.map": "/static/js/runtime-main.96201c16.js.map",
     "static/css/2.560b9325.chunk.css": "/static/css/2.560b9325.chunk.css",
     "static/js/2.c00d5b09.chunk.js": "/static/js/2.c00d5b09.chunk.js",
     "static/js/2.c00d5b09.chunk.js.map": "/static/js/2.c00d5b09.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.686e56343c4dfc8db30c7d38f12a35ef.js": "/precache-manifest.686e56343c4dfc8db30c7d38f12a35ef.js",
+    "precache-manifest.cb838ec811ac0c9b0693573c008f00fa.js": "/precache-manifest.cb838ec811ac0c9b0693573c008f00fa.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.560b9325.chunk.css.map": "/static/css/2.560b9325.chunk.css.map",
-    "static/css/main.70dac7bd.chunk.css.map": "/static/css/main.70dac7bd.chunk.css.map",
+    "static/css/main.c3712852.chunk.css.map": "/static/css/main.c3712852.chunk.css.map",
     "static/js/2.c00d5b09.chunk.js.LICENSE.txt": "/static/js/2.c00d5b09.chunk.js.LICENSE.txt",
-    "static/media/0.png": "/static/media/0.8325706a.png",
+    "static/media/0.png": "/static/media/0.b5f8bf7d.png",
     "static/media/1 - Trim.mp4": "/static/media/1 - Trim.4a3c24be.mp4",
     "static/media/1.jpg": "/static/media/1.29c5e7fb.jpg",
     "static/media/1.png": "/static/media/1.fc9e1084.png",
@@ -35,7 +35,6 @@
     "static/media/cwoc.png": "/static/media/cwoc.404ae7bc.png",
     "static/media/dr1_battery_compartment_exploded.png": "/static/media/dr1_battery_compartment_exploded.132ae889.png",
     "static/media/drone.jpg": "/static/media/drone.aa5751c5.jpg",
-    "static/media/drone_landing.mp4": "/static/media/drone_landing.683eb52b.mp4",
     "static/media/drone_on_pad.jpg": "/static/media/drone_on_pad.e8b680e0.jpg",
     "static/media/efi.png": "/static/media/efi.82473004.png",
     "static/media/all.css": "/static/media/fa-solid-900.8e4a6dcc.eot",
@@ -74,14 +73,14 @@
     "static/media/ssgandhy.png": "/static/media/ssgandhy.894ef0fc.png",
     "static/media/svgs_targets.jpg": "/static/media/svgs_targets.56bff86f.jpg",
     "static/media/valora.jpg": "/static/media/valora.246ad3ed.jpg",
-    "static/media/vid1.mp4": "/static/media/vid1.63663ea0.mp4",
+    "static/media/vid1.mp4": "/static/media/vid1.e6d3396f.mp4",
     "static/media/wrighter.jpg": "/static/media/wrighter.02fdae43.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.96201c16.js",
     "static/css/2.560b9325.chunk.css",
     "static/js/2.c00d5b09.chunk.js",
-    "static/css/main.70dac7bd.chunk.css",
-    "static/js/main.0ce16b57.chunk.js"
+    "static/css/main.c3712852.chunk.css",
+    "static/js/main.0f57173c.chunk.js"
   ]
 }
