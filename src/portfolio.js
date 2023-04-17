@@ -4,7 +4,7 @@
 const settings = {
   isSplash: true, // Change this to true if you want to use the splash screen.
   useCustomCursor: false,
-  //   googleTrackingID: "UA-174238252-2",
+  //   googleTrackingID: "G-KK6MXGH83N",
 };
 
 //Home Page
