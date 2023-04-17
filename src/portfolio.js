@@ -388,7 +388,7 @@ const projects = {
         {
           mediaType: "vid",
           alt: "Fusion360",
-          img: "projects/dr1/drone_landing.mp4",
+          img: "projects/dr1/vid1.mp4",
         },
       ],
     },

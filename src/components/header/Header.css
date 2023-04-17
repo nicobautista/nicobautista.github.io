@@ -179,6 +179,7 @@
   box-shadow: 0 1px 10px #47a148;
   background-color: #47a148;
   color: #ffffff !important;
+  cursor: pointer;
 }
 
 /* 48em = 768px */
