@@ -387,7 +387,7 @@ const projects = {
         },
         {
           mediaType: "vid",
-          alt: "Fusion360",
+          alt: "Drone Landing",
           img: "projects/dr1/vid1.mp4",
         },
       ],
@@ -413,47 +413,47 @@ const projects = {
       ],
       media: [],
     },
-    {
-      id: "2",
-      name: "Conceptual Video Game Controller",
-      description:
-        "Quick mockup of a video game controller. Modeled with Fusion 360 using surfaces created from curves. Thickned and mirrored. Steps from this point according to specification, could be to add a lip and groove, ribs, cuts for buttons, joysticks, etc.",
-      languages: [
-        {
-          name: "HTML5",
-          iconifyClass: "logos-html-5",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "logos-css-3",
-        },
-        {
-          name: "NodeJs",
-          iconifyClass: "logos-nodejs",
-        },
-        {
-          name: "Augmented Reality",
-          iconifyClass: "bi:badge-ar",
-        },
-      ],
-      media: [
-        {
-          mediaType: "img",
-          alt: "Curves",
-          img: "projects/mando/1.png",
-        },
-        {
-          mediaType: "img",
-          alt: "Surfaces",
-          img: "projects/mando/2.png",
-        },
-        {
-          mediaType: "img",
-          alt: "Solid",
-          img: "projects/mando/3.png",
-        },
-      ],
-    },
+    // {
+    //   id: "2",
+    //   name: "Conceptual Video Game Controller",
+    //   description:
+    //     "Quick mockup of a video game controller. Modeled with Fusion 360 using surfaces created from curves. Thickned and mirrored. Steps from this point according to specification, could be to add a lip and groove, ribs, cuts for buttons, joysticks, etc.",
+    //   languages: [
+    //     {
+    //       name: "HTML5",
+    //       iconifyClass: "logos-html-5",
+    //     },
+    //     {
+    //       name: "CSS3",
+    //       iconifyClass: "logos-css-3",
+    //     },
+    //     {
+    //       name: "NodeJs",
+    //       iconifyClass: "logos-nodejs",
+    //     },
+    //     {
+    //       name: "Augmented Reality",
+    //       iconifyClass: "bi:badge-ar",
+    //     },
+    //   ],
+    //   media: [
+    //     {
+    //       mediaType: "img",
+    //       alt: "Curves",
+    //       img: "projects/mando/1.png",
+    //     },
+    //     {
+    //       mediaType: "img",
+    //       alt: "Surfaces",
+    //       img: "projects/mando/2.png",
+    //     },
+    //     {
+    //       mediaType: "img",
+    //       alt: "Solid",
+    //       img: "projects/mando/3.png",
+    //     },
+    //   ],
+    // },
     {
       id: "3",
       name: "Conceptual Car Design Using Stable Diffusion's Control Net AI",
@@ -570,6 +570,80 @@ const projects = {
           alt: "Timelapse of a print after the changes.",
           description: "Timelapse of a print after the changes.",
           img: "projects/sm1/1 - Trim.mp4",
+        },
+      ],
+    },
+    {
+      id: "6",
+      name: "Detailed design of a 3D Printer printhead",
+      url: "",
+      description:
+        "This is a follow-up design to 'Modifications and Improvements to an FDM 3D Printer' that I made over a weekend. This design is insipired by Voron's Stealthburner, and compared to my previous design, it features a more 'compact' printhead that makes use of a blower fan for part cooling with ducts incorporated in the structure of the printhead. In the near future, I will be prototyping this and will be updating this page with my results.",
+      languages: [],
+      media: [
+        {
+          mediaType: "img",
+          description: "",
+          alt: "Overview",
+          img: "projects/sm1_v2/start.jpg",
+        },
+        {
+          mediaType: "img",
+          description:
+            "I start the design by modeling the components that represent my constraints. In this case, the hotend (E3D V6), and the fans I use (40mm for the heatsink and a blower fan for part cooling).",
+          alt: "View 1",
+          img: "projects/sm1_v2/1.jpg",
+        },
+        {
+          mediaType: "img",
+          description:
+            "The design is then made into a solid. I first model the parts that will be symmetric about the center plane.",
+          alt: "View 2",
+          img: "projects/sm1_v2/2.jpg",
+        },
+        {
+          mediaType: "img",
+          description:
+            "This is the design after adding detail and splitting it into 4 parts for assembly.",
+          alt: "View 3",
+          img: "projects/sm1_v2/2_5.jpg",
+        },
+        {
+          mediaType: "img",
+          description: "Front view of the final assembly.",
+          alt: "View 4",
+          img: "projects/sm1_v2/3.jpg",
+        },
+        {
+          mediaType: "img",
+          description: "Right view of the final assembly.",
+          alt: "View 5",
+          img: "projects/sm1_v2/4.jpg",
+        },
+        {
+          mediaType: "img",
+          description: "Back view of the final assembly.",
+          alt: "View 6",
+          img: "projects/sm1_v2/5.jpg",
+        },
+        {
+          mediaType: "img",
+          description:
+            "The air ducts for part cooling are highlighted in blue.",
+          alt: "View 7",
+          img: "projects/sm1_v2/6.jpg",
+        },
+        {
+          mediaType: "img",
+          description: "Exploded view of the printhead assembly.",
+          alt: "View 8",
+          img: "projects/sm1_v2/7.jpg",
+        },
+        {
+          mediaType: "img",
+          description: "Printhead assembled into the frame of the 3D printer.",
+          alt: "View 9",
+          img: "projects/sm1_v2/8.jpg",
         },
       ],
     },
