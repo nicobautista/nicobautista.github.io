@@ -575,12 +575,24 @@ const projects = {
     },
     {
       id: "6",
-      name: "Detailed design of a 3D Printer printhead",
+      name: "Detailed design of a 3D printer printhead",
       url: "",
       description:
         "This is a follow-up design to 'Modifications and Improvements to an FDM 3D Printer' that I made over a weekend. This design is insipired by Voron's Stealthburner, and compared to my previous design, it features a more 'compact' printhead that makes use of a blower fan for part cooling with ducts incorporated in the structure of the printhead. In the near future, I will be prototyping this and will be updating this page with my results.",
       languages: [],
       media: [
+        {
+          mediaType: "img",
+          description: "",
+          alt: "Animation of 3D Model 1",
+          img: "projects/sm1_v2/Printhead.gif",
+        },
+        {
+          mediaType: "img",
+          description: "",
+          alt: "Animation of 3D Model 2",
+          img: "projects/sm1_v2/Printhead2.gif",
+        },
         {
           mediaType: "img",
           description: "",
