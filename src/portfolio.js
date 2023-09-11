@@ -54,8 +54,8 @@ const skills = {
           image_path: "ansys96.png",
         },
         {
-          skillName: "AutoCAD",
-          image_path: "autocad96.png",
+          skillName: "Blender",
+          image_path: "blender96.png",
         },
       ],
     },
@@ -413,47 +413,38 @@ const projects = {
       ],
       media: [],
     },
-    // {
-    //   id: "2",
-    //   name: "Conceptual Video Game Controller",
-    //   description:
-    //     "Quick mockup of a video game controller. Modeled with Fusion 360 using surfaces created from curves. Thickned and mirrored. Steps from this point according to specification, could be to add a lip and groove, ribs, cuts for buttons, joysticks, etc.",
-    //   languages: [
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //     {
-    //       name: "NodeJs",
-    //       iconifyClass: "logos-nodejs",
-    //     },
-    //     {
-    //       name: "Augmented Reality",
-    //       iconifyClass: "bi:badge-ar",
-    //     },
-    //   ],
-    //   media: [
-    //     {
-    //       mediaType: "img",
-    //       alt: "Curves",
-    //       img: "projects/mando/1.png",
-    //     },
-    //     {
-    //       mediaType: "img",
-    //       alt: "Surfaces",
-    //       img: "projects/mando/2.png",
-    //     },
-    //     {
-    //       mediaType: "img",
-    //       alt: "Solid",
-    //       img: "projects/mando/3.png",
-    //     },
-    //   ],
-    // },
+    {
+      id: "2",
+      name: "Video Tools",
+      description:
+        "Chrome extension that adds sliders to control CSS video filter parameters like contrast, brightness, and saturation ({[Repo][https://github.com/nicobautista/VideoTools]}). The logo was created using Stable Diffusion AI. Currently configured to work on YouTube videos, but the manifest can be expanded to work on any page that has <video> elements. WIP is to implement a video zoomer/trimmer that crops the video to a selected area. This is currently working on a userscript. I will be working on the implementation into this framework instead.",
+      languages: [
+        {
+          name: "HTML5",
+          iconifyClass: "logos-html-5",
+        },
+        {
+          name: "CSS3",
+          iconifyClass: "logos-css-3",
+        },
+        {
+          name: "Javascript",
+          iconifyClass: "logos-javascript",
+        },
+      ],
+      media: [
+        {
+          mediaType: "img",
+          alt: "Logo",
+          img: "projects/VideoTools/logo512.jpg",
+        },
+        {
+          mediaType: "vid",
+          alt: "Surfaces",
+          img: "projects/VideoTools/demo.mp4",
+        },
+      ],
+    },
     {
       id: "3",
       name: "Conceptual Car Design Using Stable Diffusion's Control Net AI",
